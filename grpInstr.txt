@@ -1,0 +1,13 @@
+1.) Select a test temperature.
+
+2.) We then randomly generate a 10 by 10, 2D-Lattice magnet using the np.random.randint() function, and display the initial lattice with plt.imshow().
+
+3.) Write a function called "totalEnergy" to calculate the energy of the 2D-Lattice.
+
+4.) Write a funtion called "change" that first calls the function "totalEnergy", randomly select a component of the 2D-Lattice and temporarily flips the sign of that component, calculates the "totalEnergy" again of the temporary array, and weighs how the the energy change effects the probability. Using np.random.random() and a condition statement based on our probability, we will either accept the change or reject. This returns either the same, or changed lattice depeding on if the probability was accepted.
+
+5.) We can iterate the function "change" 50 times, and then display the lattice again with plt.imshow(). We will iterate this code 3 times to see the change through the entire process and observe a trend.
+
+6.) Repeat steps 1-5 for other temperatures.
+
+Note: Test for the temperature where the probability is 0.5. Then test the temperatures higher and see how this changes the magnet.
